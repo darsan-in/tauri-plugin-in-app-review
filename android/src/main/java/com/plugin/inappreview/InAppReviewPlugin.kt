@@ -8,10 +8,12 @@ import app.tauri.plugin.Plugin
 import com.google.android.play.core.review.ReviewInfo
 import com.google.android.play.core.review.ReviewManager
 import com.google.android.play.core.review.ReviewManagerFactory
+//import com.google.android.play.core.review.testing.FakeReviewManager
 
 @TauriPlugin
 class InAppReviewPlugin(private val activity: Activity) : Plugin(activity) {
     private val reviewManager: ReviewManager = ReviewManagerFactory.create(activity)
+    //private val reviewManager: ReviewManager = FakeReviewManager(activity)
     private var reviewInfo: ReviewInfo? = null
 
     override fun load(webView: android.webkit.WebView) {
