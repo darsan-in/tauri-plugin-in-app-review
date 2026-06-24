@@ -8,13 +8,10 @@ plugins {
 android {
     namespace = "com.plugin.inappreview"
     
-    // Android 17
-    compileSdk = 36
+    compileSdk = 37 //Android 17
 
     defaultConfig {
-        // Android 8.0 and above
-        minSdk = 26
-        // targetSdk = 36
+       minSdk = 26 // Android 8.0
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -37,7 +34,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.19.0")
+    implementation("androidx.core:core-ktx:1.18.0") //updated at 24/jun/26 1.19.0 is breaking
     implementation("androidx.appcompat:appcompat:1.7.1")
     implementation("com.google.android.material:material:1.14.0")
     
