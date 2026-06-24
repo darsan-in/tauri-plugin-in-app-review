@@ -30,14 +30,14 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlin { compilerOptions { jvmTarget = JvmTarget.JVM_1_8 } }
+    kotlin { compilerOptions { jvmTarget = JvmTarget.JVM_17 } }
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.core:core-ktx:1.19.0")
     implementation("androidx.appcompat:appcompat:1.7.1")
     implementation("com.google.android.material:material:1.14.0")
     
